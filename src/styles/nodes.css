@@ -1,0 +1,32 @@
+.base-node {
+  background: var(--node-bg);
+  border: 1px solid var(--node-border);
+  border-radius: 10px;
+  padding: 10px 12px;
+  box-shadow: var(--node-shadow);
+  color: var(--text-primary);
+  font-size: 13px;
+}
+
+.base-node-title {
+  font-weight: 600;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.base-node-content label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 6px;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.base-node-content input,
+.base-node-content select {
+  padding: 4px 6px;
+  font-size: 12px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+}

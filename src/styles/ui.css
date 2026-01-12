@@ -1,0 +1,14 @@
+.react-flow {
+  background: var(--canvas-bg);
+}
+
+.submit-btn {
+  margin: 12px auto;
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: none;
+  background: var(--accent);
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}

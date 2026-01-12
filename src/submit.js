@@ -1,10 +1,9 @@
-// submit.js
+import "./styles/ui.css";
 
 export const SubmitButton = () => {
-
-    return (
-        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-            <button type="submit">Submit</button>
-        </div>
-    );
-}
+  return (
+    <div style={{ textAlign: "center" }}>
+      <button className="submit-btn">Submit</button>
+    </div>
+  );
+};

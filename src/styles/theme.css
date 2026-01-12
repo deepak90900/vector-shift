@@ -1,0 +1,21 @@
+:root {
+  /* Canvas */
+  --canvas-bg: #f9fafc;
+
+  /* Node */
+  --node-bg: #f2f4ff;
+  --node-border: #c7ccf5;
+  --node-shadow: 0 6px 16px rgba(80, 90, 200, 0.12);
+
+  /* Text */
+  --text-primary: #1f2937;
+  --text-secondary: #4b5563;
+
+  /* Accent */
+  --accent: #6366f1;
+  --accent-light: #e0e7ff;
+
+  /* Handle */
+  --handle-bg: #6366f1;
+  --handle-border: #4f46e5;
+}

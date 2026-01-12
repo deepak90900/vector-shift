@@ -1,55 +1,51 @@
-// BaseNode.js
 import { Handle, Position } from "reactflow";
+import "../styles/nodes.css";
 
 export const BaseNode = ({
   title,
   inputs = [],
   outputs = [],
   children,
-  width = 200,
+  width = 220,
 }) => {
   const height = Math.max(
-    80,
-    40 + Math.max(inputs.length, outputs.length) * 20
+    126,
+    50 + Math.max(inputs.length, outputs.length) * 22
   );
 
   return (
-    <div
-      style={{
-        width,
-        height,
-        border: "1px solid black",
-        borderRadius: "6px",
-        background: "#fff",
-        padding: "8px",
-        position: "relative",
-      }}
-    >
-      {/* INPUT HANDLES (LEFT) */}
+    <div className="base-node" style={{ width, height, position: "relative" }}>
+      {/* INPUT HANDLES */}
       {inputs.map((input, index) => (
         <Handle
           key={input}
           type="target"
           position={Position.Left}
           id={input}
-          style={{ top: `${((index + 1) * 100) / (inputs.length + 1)}%` }}
+          style={{
+            background: "var(--handle-bg)",
+            border: "2px solid var(--handle-border)",
+            top: `${((index + 1) * 100) / (inputs.length + 1)}%`,
+          }}
         />
       ))}
 
-      {/* TITLE */}
-      <div style={{ fontWeight: "bold", marginBottom: "6px" }}>{title}</div>
+      <div className="base-node-title">{title}</div>
 
-      {/* NODE CONTENT */}
-      <div>{children}</div>
+      <div className="base-node-content">{children}</div>
 
-      {/* OUTPUT HANDLES (RIGHT) */}
+      {/* OUTPUT HANDLES */}
       {outputs.map((output, index) => (
         <Handle
           key={output}
           type="source"
           position={Position.Right}
           id={output}
-          style={{ top: `${((index + 1) * 100) / (outputs.length + 1)}%` }}
+          style={{
+            background: "var(--handle-bg)",
+            border: "2px solid var(--handle-border)",
+            top: `${((index + 1) * 100) / (outputs.length + 1)}%`,
+          }}
         />
       ))}
     </div>

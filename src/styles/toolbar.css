@@ -1,0 +1,60 @@
+.toolbar {
+  display: flex;
+  gap: 10px;
+  padding: 12px;
+  background: var(--canvas-bg);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Toolbar item (card style) */
+.draggable-node {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 14px;
+  min-width: 110px;
+
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+
+  font-size: 13px;
+  color: var(--text-primary);
+
+  cursor: grab;
+  user-select: none;
+
+  transition: all 0.15s ease;
+  box-shadow: 0 4px 14px rgba(80, 90, 200, 0.15);
+}
+
+/* Hover effect */
+.draggable-node:hover {
+  background: var(--accent-light);
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+/* Active (when dragging) */
+.draggable-node:active {
+  cursor: grabbing;
+  transform: scale(0.98);
+}
+
+/* Icon placeholder */
+.draggable-node-icon {
+  width: 26px;
+  height: 26px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--accent-light);
+  color: var(--accent);
+
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
