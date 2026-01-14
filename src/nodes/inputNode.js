@@ -9,7 +9,7 @@ export const InputNode = ({ id, data }) => {
   const [inputType, setInputType] = useState(data?.inputType || "Text");
 
   return (
-    <BaseNode title="Input" inputs={[]} outputs={[`${id}-value`]}>
+    <BaseNode title="Input" inputs={[]} outputs={[currName]}>
       <label>
         Name:
         <input

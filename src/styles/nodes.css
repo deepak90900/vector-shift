@@ -30,3 +30,47 @@
   border-radius: 6px;
   border: 1px solid #d1d5db;
 }
+
+.base-node-content input,
+.base-node-content select,
+.base-node-content textarea {
+  font-size: 12px;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #022962;
+  line-height: 1.4;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.base-node-content textarea {
+  resize: none;
+  max-height: 60px;
+  overflow: hidden;
+}
+
+.base-node-content input:focus,
+.base-node-content select:focus,
+.base-node-content textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+/* Focus state */
+.text-node-textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+.boolean-row {
+  display: flex;
+  gap: 10px;
+}
+
+.boolean-row input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}

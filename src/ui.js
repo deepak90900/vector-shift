@@ -11,6 +11,10 @@ import { LLMNode } from "./nodes/llmNode";
 import { OutputNode } from "./nodes/outputNode";
 import { TextNode } from "./nodes/textNode";
 import { MathNode } from "./nodes/mathNode";
+import { DelayNode } from "./nodes/delayNode";
+import { UppercaseNode } from "./nodes/uppercaseNode";
+import { BooleanNode } from "./nodes/booleanNode";
+import { DebugNode } from "./nodes/debugNode";
 
 import "reactflow/dist/style.css";
 
@@ -22,6 +26,10 @@ const nodeTypes = {
   customOutput: OutputNode,
   text: TextNode,
   math: MathNode,
+  delay: DelayNode,
+  uppercase: UppercaseNode,
+  boolean: BooleanNode,
+  debug: DebugNode,
 };
 
 const selector = (state) => ({

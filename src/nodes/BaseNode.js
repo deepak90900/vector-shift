@@ -7,12 +7,8 @@ export const BaseNode = ({
   outputs = [],
   children,
   width = 220,
+  height = "auto",
 }) => {
-  const height = Math.max(
-    126,
-    50 + Math.max(inputs.length, outputs.length) * 22
-  );
-
   return (
     <div className="base-node" style={{ width, height, position: "relative" }}>
       {/* INPUT HANDLES */}
