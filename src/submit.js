@@ -27,7 +27,7 @@ export const SubmitButton = () => {
         `Pipeline Summary:\n\n` +
           `Nodes: ${result.num_nodes}\n` +
           `Edges: ${result.num_edges}\n` +
-          `Is DAG: ${result.is_dag ? "Yes ✅" : "No ❌"}`
+          `Is DAG: ${result.is_dag ? "Yes" : "No"}`
       );
     } catch (err) {
       alert("Failed to validate pipeline");
